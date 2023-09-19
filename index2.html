@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+    </head>
+
+
+    <body>
+        <header>
+            <h1>Policia de Asturias</h1>
+ 
+        </header>
+
+        <main>
+            
+            <section id="formuRo">
+                <h2>Formulario de Robos</h2>
+
+                <form action="/action_page.php" method="get">
+
+                   
+                    <p> 
+                        <label for="date">Dia: </label>                        
+                        <input type="date" id="date" name="date" autofocus>
+                    </p>
+                    <p>
+                        <label for="time">Hora: </label>
+                        <input type="datetime" id="time" name="time">
+                    </p>
+                    <p>
+                        <label for="color">Color: </label>
+                        <input type="color" id="color" name="color" >
+                    </p>
+                    <p>
+                        <label for="precio">Rango de Precio: </label>
+                        <input type="range" id="precio" name="precio" min="0" max="40" step="10" list="rango">
+                        
+                        <datalist id="rango">
+                            <option value="0" label="0"></option>
+                            <option value="10"></option>
+                            <option value="20"></option>
+                            <option value="30"></option>
+                            <option value="40" label="40"></option>
+
+                        </datalist><br>
+                    </p>
+
+                    <p>
+                    <fieldset>
+                        <legend><b>Tipo de Bicicleta</b></legend>
+                        <select name="select">
+                        <option value="value1"> Turismo</option>
+                        <option value="value2"> Cros</option>
+                        <option value="value1"> Montaña</option>
+                        <option value="value1"> Lujo</option>
+                    </fieldset>
+                    </p><br>
+
+                    
+                    <p>
+                    <input type="reset">
+                    <input type="submit" value="Enviar">
+                    </p>
+                </form>
+                
+
+            </section>
+
+        </main>
+    
+    </body>
+
+</html>
