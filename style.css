@@ -1,0 +1,17 @@
+*
+{
+    font-family: Arial, Helvetica, sans-serif;
+    scroll-behavior: smooth;
+}
+
+.titulo
+{
+    text-align:center
+}
+
+.picture
+{
+    margin: auto;
+    width:auto;
+    text-align: center;
+}

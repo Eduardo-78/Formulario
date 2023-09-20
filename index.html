@@ -2,27 +2,34 @@
 <html lang="en">
     <head>
         <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Document</title>
+        <link rel="stylesheet" href="style.css">
+        
+
     </head>
 
 
     <body>
         <header>
-            <h1>Club de la Tercera Edad de Entrepenes</h1>
-            <h2>Asturias</h2>
-            <img src="./assest/abueletes.jpg" width="300">
+            <div class="titulo">
+                <h1>Club de la Tercera Edad de Entrepenes</h1>
+                <h2>Asturias</h2>
+            </div>
 
+            <div class="picture">                
+                <img src="./assest/abueletes.jpg" alt="abuelos" width="400">
+            </div>
+            
         </header>
 
         <main>
             
-            <section id="formuAdmis">
+            <section>
                 <h2>Formulario de Admision</h2>
 
                 <form action="/action_page.php" method="get">
-
-                   
                     <p> 
                         <label for="name">Nombre: </label>                        
                         <input tabindex="0" type="text" id="name" name="name" autofocus>
@@ -49,7 +56,7 @@
                     </p>
 
                     <input placeholder="Escribe Algo Sobre Ti"><br>
-                    <textarea name="descripcion" rows="4" cols="21"></textarea>
+                    <textarea name="descripcion" rows="4" cols="22"></textarea>
                   
                     <p>
                         <label for="email">Email</label>
@@ -64,9 +71,127 @@
                     <input type="submit" value="Enviar">
 
                 </form>
-                
+            
+            </section><br><br>
 
+
+            <!--     /*inicia formulario de la policia -->
+
+           <div class="titulo">
+               <h1>Policia de Asturias</h1>
+           </div>
+        
+           <div class="picture">                
+               <img src="./assest/policia.jpg" alt="policia" width="400">
+           </div>     
+                
+           <section>
+               <h2>Formulario de Robos</h2>
+               <form action="/action_page.php" method="get">
+                 
+                    <p> 
+                      <label for="date">Dia: </label>                        
+                      <input type="date" id="date" name="date" autofocus>
+                    </p>
+                    <p>
+                      <label for="hora">Hora: </label>
+                      <input type="time" id="hora" name="hora">
+                    </p>
+                    <p>
+                      <label for="color">Color: </label>
+                      <input type="color" id="color" name="color" >
+                    </p>
+                    <p>
+                        <label for="precio">Rango de Precio: </label>
+                        0<input type="range" id="precio" name="precio" min="0" max="1000" step="10" list="rango">1000
+                  
+                        <datalist id="rango">
+                            <option value="0" label="0%"></option>
+                            <option value="200"></option>
+                            <option value="400"></option>
+                            <option value="600"></option>
+                            <option value="800"></option>
+                            <option value="1000" label="100%"></option>
+                        </datalist><br>
+                   </p>
+    
+                    <h4>Tipo de Bicicleta</h4>   
+                    <div>
+                        <b>Paseo:</b>
+                        <select>
+                            <option value="value1"></option> 
+                            <option value="value2"> Señorial</option>
+                            <option value="value3"> Anti-plebeyos</option>
+                            <option value="value4"> Por encima del hombro</option>
+                        </select>
+
+                        <b>Montaña:</b>
+                        <select>
+                            <option value="value1"></option> 
+                            <option value="value2"> Gamusinos</option>
+                            <option value="value3"> Hueleflores premium</option>
+                            <option value="value4"> Fango lover</option> 
+                        </select>
+
+                        <b>Carreras:</b>
+                        <select>
+                            <option value="value1"></option> 
+                            <option value="value2"> Metro y medio</option>
+                            <option value="value3"> 3 de la tarde. Fluerescente edition</option>
+                            <option value="value4"> Grupitors</option>   
+                        </select>
+                    </div><br>
+
+                    <div>
+                        <b>Accesorios: </b><small>(Oprima Ctrl para seleccionar mas de uno)</small><br>
+                        <select name="accesorios[]" id="accesorios" size="6" multiple><p>Accesorios</p>
+                            <option value="1">Ruedines</option>
+                            <option value="2">Pegatinas</option>
+                            <option value="3">Cestita</option>
+                            <option value="4">Bomba de Aire</option>
+                            <option value="5">Timbre</option>
+                            <option value="6">Foco</option>
+                        </select>
+                    </div><br><br>
+
+                    <h3>Qué Marca Era?</h3>
+                    <select>
+                        <optgroup>
+                            <option> </option>
+                            <option>Specialized</option>
+                            <option>Trek</option>
+                            <option>Merida</option>
+                            <option>Scott</option>
+                            <option>Giant</option>
+                            <option>Cube</option>
+                            <option>Lapierre</option>
+                            <option>Orbea</option>
+                            <option>Cannondale</option>
+                            <option>Bmc</option>
+                            <option>Canyon</option>
+                            <option>Look</option>
+                            <option>Protek</option>
+                            <option>Megamo</option>
+                            <option>Pinarello</option>
+                            <option>Bianchi</option>
+                            <option>Bh</option>
+                            <option>Factor</option>
+                            <option>Ghost</option>
+                            <option>Cervélo</option>
+                            <option>Argon</option>
+                        </optgroup>
+                    </select><br><br>
+
+                    <div class="titulo">
+                        <input type="reset">
+                        <input type="submit" value="Enviar">
+                    </div>
+                </form>
+                   
             </section>
+    
+
+           
 
         </main>
     
